@@ -3,9 +3,57 @@
   background: linear-gradient(to bottom, transparent,  #000 100%), url("../images/welcome.jpg") 0 0 no-repeat;
   background-size: cover;
   position: relative;
+}
+.welcome-slogan {
+  //-webkit-transform: translateY(50%);
+  //transform: translateY(50%);
+  @include mixflexbox;
 
-  .welcome-slogan {
-    -webkit-transform: translateY(50%);
-    transform: translateY(50%);
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h2:first-child {
+    font-size: 72px;
+    color: #fff;
+  }
+
+  p:first-child {
+    font-size: 30px;
+    color: #fff;
+  }
+}
+
+.presentation-list {
+  font-size: 0;
+  max-width: 1170px;
+  @include mixflexbox;
+  justify-content: center;
+
+  li {
+    text-align: center;
+    width: 33%;
+    max-width: 100%;
+
+    //.tincidunt-icon {
+    //  background: url("../images/tincidunt.jpg") 0 0 np-repeat;
+    //  width: 134px;
+    //  height: 134px;
+    //
+    //}
+  }
+}
+
+.presentation-description {
+  padding: 20px 20px 0;
+
+  h3 {
+    color: #fff;
+    font-size: 30px;
+  }
+
+  p {
+    color: #fff;
+    font-size: 15px;
   }
 }
