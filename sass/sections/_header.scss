@@ -1,0 +1,42 @@
+.header-main {
+  background: #edeff1;
+}
+
+.logo {
+    background-image: url("../images/logo.png");
+    width: 157px;
+    height: 28px;
+    margin: 0;
+  h1 {
+    text-indent: -9999px;
+  }
+}
+
+.header-wrap {
+  @include mixflexbox;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.main-list {
+  @include mixflexbox;
+  margin: 0;
+
+  li {
+    .hvr-adj {
+      padding: 10px 20px;
+      color: #31353e;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .active-link {
+      border-radius: 50px;
+      background: #dd4b2b;
+      color: #fff;
+    }
+  }
+}
