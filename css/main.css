@@ -153,3 +153,50 @@ a {
   background: #dd4b2b;
   color: #fff;
 }
+
+/* line 1, ../sass/sections/_our-news.scss */
+.our-news-section {
+  padding: 70px 0;
+}
+/* line 4, ../sass/sections/_our-news.scss */
+.our-news-section header {
+  font: 31px/24px Arial;
+  color: #31353e;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+/* line 12, ../sass/sections/_our-news.scss */
+.our-news-section .row {
+  justify-content: space-around;
+}
+
+/* line 17, ../sass/sections/_our-news.scss */
+.our-news {
+  width: 371px;
+}
+/* line 20, ../sass/sections/_our-news.scss */
+.our-news img {
+  width: 371px;
+  height: auto;
+}
+/* line 25, ../sass/sections/_our-news.scss */
+.our-news .our-news-body {
+  padding: 35px 35px 0;
+  text-align: center;
+}
+/* line 29, ../sass/sections/_our-news.scss */
+.our-news .our-news-body h3 {
+  font: 24px/30px Arial;
+  color: #31353e;
+}
+/* line 34, ../sass/sections/_our-news.scss */
+.our-news .our-news-body p {
+  font: 15px/30px Arial;
+  color: #31353e;
+  margin-bottom: 35px;
+}
+/* line 40, ../sass/sections/_our-news.scss */
+.our-news .our-news-body .padding {
+  padding: 15px 50px;
+}

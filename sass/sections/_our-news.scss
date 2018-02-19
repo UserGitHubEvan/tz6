@@ -1,0 +1,44 @@
+.our-news-section {
+  padding: 70px 0;
+
+  header {
+    font: 31px/24px Arial;
+    color: #31353e;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .row {
+    justify-content: space-around;
+  }
+}
+
+.our-news {
+  width: 371px;
+
+  img {
+    width: 371px;
+    height: auto;
+  }
+
+  .our-news-body {
+    padding: 35px 35px 0;
+    text-align: center;
+
+    h3 {
+      font: 24px/30px Arial;
+      color: #31353e;
+    }
+
+    p {
+      font: 15px/30px Arial;
+      color: #31353e;
+      margin-bottom: 35px;
+    }
+
+    .padding {
+      padding: 15px 50px;
+    }
+  }
+}
