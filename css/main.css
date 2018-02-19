@@ -2,19 +2,20 @@
 body {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
+  background: #edeff1;
 }
 
-/* line 6, ../sass/adjustments/_adjustment.scss */
+/* line 7, ../sass/adjustments/_adjustment.scss */
 .container {
   max-width: 1170px;
 }
 
-/* line 10, ../sass/adjustments/_adjustment.scss */
+/* line 11, ../sass/adjustments/_adjustment.scss */
 li {
   list-style: none;
 }
 
-/* line 14, ../sass/adjustments/_adjustment.scss */
+/* line 15, ../sass/adjustments/_adjustment.scss */
 a {
   text-decoration: none;
 }
@@ -29,57 +30,74 @@ a {
 
 /* line 7, ../sass/sections/_welcome.scss */
 .welcome-slogan {
+  -webkit-transform: translateY(3%);
+  transform: translateY(3%);
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  align-content: center;
+  margin: 0 -15px 0;
   align-items: center;
   flex-direction: column;
 }
-/* line 16, ../sass/sections/_welcome.scss */
+/* line 17, ../sass/sections/_welcome.scss */
 .welcome-slogan h2:first-child {
-  font-size: 72px;
+  font: 72px/48px Arial;
   color: #fff;
 }
-/* line 21, ../sass/sections/_welcome.scss */
-.welcome-slogan p:first-child {
-  font-size: 30px;
+/* line 22, ../sass/sections/_welcome.scss */
+.welcome-slogan p {
+  font: 30px/48px Arial;
   color: #fff;
 }
 
-/* line 27, ../sass/sections/_welcome.scss */
-.presentation-list {
-  font-size: 0;
-  max-width: 1170px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
+/* line 28, ../sass/sections/_welcome.scss */
+.row {
+  margin-bottom: 30px;
 }
-/* line 33, ../sass/sections/_welcome.scss */
-.presentation-list li {
+/* line 31, ../sass/sections/_welcome.scss */
+.row .presentation {
   text-align: center;
-  width: 33%;
-  max-width: 100%;
+}
+/* line 34, ../sass/sections/_welcome.scss */
+.row .presentation img {
+  width: 133px;
+  height: 133px;
+  border-radius: 50%;
+  border: 7px solid #edeff1;
+  overflow: hidden;
 }
 
-/* line 47, ../sass/sections/_welcome.scss */
+/* line 44, ../sass/sections/_welcome.scss */
 .presentation-description {
   padding: 20px 20px 0;
 }
-/* line 50, ../sass/sections/_welcome.scss */
+/* line 47, ../sass/sections/_welcome.scss */
 .presentation-description h3 {
   color: #fff;
-  font-size: 30px;
+  font: 30px/24px Arial;
+  margin-bottom: 25px;
 }
-/* line 55, ../sass/sections/_welcome.scss */
+/* line 53, ../sass/sections/_welcome.scss */
 .presentation-description p {
   color: #fff;
-  font-size: 15px;
+  font: 15px/30px Arial;
+  margin-bottom: 0;
+}
+
+/* line 60, ../sass/sections/_welcome.scss */
+.btn {
+  padding: 15px 55px;
+  background: #fff;
+  font: 18px/30px Arial;
+  color: #612316;
+  border-radius: 30px;
+}
+/* line 67, ../sass/sections/_welcome.scss */
+.btn:hover {
+  background: #612316;
+  color: #fff;
 }
 
 /* line 1, ../sass/sections/_header.scss */
@@ -94,12 +112,12 @@ a {
   height: 28px;
   margin: 0;
 }
-/* line 10, ../sass/sections/_header.scss */
+/* line 11, ../sass/sections/_header.scss */
 .logo h1 {
   text-indent: -9999px;
 }
 
-/* line 15, ../sass/sections/_header.scss */
+/* line 16, ../sass/sections/_header.scss */
 .header-wrap {
   display: -webkit-box;
   display: -moz-box;
@@ -111,7 +129,7 @@ a {
   padding: 30px 0;
 }
 
-/* line 22, ../sass/sections/_header.scss */
+/* line 23, ../sass/sections/_header.scss */
 .main-list {
   display: -webkit-box;
   display: -moz-box;
@@ -120,16 +138,16 @@ a {
   display: flex;
   margin: 0;
 }
-/* line 27, ../sass/sections/_header.scss */
+/* line 28, ../sass/sections/_header.scss */
 .main-list li .hvr-adj {
   padding: 10px 20px;
   color: #31353e;
 }
-/* line 31, ../sass/sections/_header.scss */
+/* line 32, ../sass/sections/_header.scss */
 .main-list li .hvr-adj:hover {
   text-decoration: none;
 }
-/* line 36, ../sass/sections/_header.scss */
+/* line 37, ../sass/sections/_header.scss */
 .main-list li .active-link {
   border-radius: 50px;
   background: #dd4b2b;

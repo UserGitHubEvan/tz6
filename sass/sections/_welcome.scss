@@ -5,42 +5,39 @@
   position: relative;
 }
 .welcome-slogan {
-  //-webkit-transform: translateY(50%);
-  //transform: translateY(50%);
+  -webkit-transform: translateY(3%);
+  transform: translateY(3%);
   @include mixflexbox;
+  margin: 0 -15px 0;
 
-  align-content: center;
+  //align-content: center;
   align-items: center;
   flex-direction: column;
 
   h2:first-child {
-    font-size: 72px;
+    font: 72px/48px Arial;
     color: #fff;
   }
 
-  p:first-child {
-    font-size: 30px;
+  p {
+    font: 30px/48px Arial;
     color: #fff;
   }
 }
 
-.presentation-list {
-  font-size: 0;
-  max-width: 1170px;
-  @include mixflexbox;
-  justify-content: center;
+.row {
+  margin-bottom: 30px;
 
-  li {
+  .presentation {
     text-align: center;
-    width: 33%;
-    max-width: 100%;
 
-    //.tincidunt-icon {
-    //  background: url("../images/tincidunt.jpg") 0 0 np-repeat;
-    //  width: 134px;
-    //  height: 134px;
-    //
-    //}
+    img {
+      width: 133px;
+      height: 133px;
+      border-radius: 50%;
+      border: 7px solid #edeff1;
+      overflow: hidden;
+    }
   }
 }
 
@@ -49,11 +46,26 @@
 
   h3 {
     color: #fff;
-    font-size: 30px;
+    font: 30px/24px Arial;
+    margin-bottom: 25px;
   }
 
   p {
     color: #fff;
-    font-size: 15px;
+    font: 15px/30px Arial;
+    margin-bottom: 0;
+  }
+}
+
+.btn {
+  padding: 15px 55px;
+  background: #fff;
+  font: 18px/30px Arial;
+  color: #612316;
+  border-radius: 30px;
+
+  &:hover {
+    background: #612316;
+    color: #fff;
   }
 }
