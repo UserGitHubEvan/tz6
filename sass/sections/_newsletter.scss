@@ -1,0 +1,68 @@
+.newsletter-section {
+  padding: rem(90px) 0 rem(110px);
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.59) 1%,rgba(0,0,0,0) 100%), url("../images/burgers-bg.jpg") 0 0 no-repeat;
+  background-size: cover;
+
+  @include phones {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.59) 1%,rgba(0,0,0,0) 100%), url("../images/burgers-bg.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+}
+
+.newsletter-center {
+  @include mixflexbox;
+  align-items: center;
+  flex-direction: column;
+
+  header {
+    font: 30px/48px Arial;
+    color: #fff;
+  }
+
+  p {
+    font: 15px/24px Arial;
+    color: #fff;
+    margin-bottom: rem(40px);
+    width: rem(545px);
+    text-align: center;
+
+    @include phones {
+      width: rem(370px);
+    }
+  }
+
+  @include phones {
+    @include mixflexbox;
+  }
+}
+
+.newsletter-form {
+  input, button {
+    border-radius: rem(50px);
+    border: rem(1px) solid #c9cbcc;
+  }
+
+  input {
+    padding: rem(15px) rem(40px);
+    width: rem(325px);
+    background: transparent;
+    color: #fff;
+  }
+
+  button {
+    padding: rem(15px) rem(70px);
+    margin-left: rem(-50px);
+    background: #fff;
+    color: #612316;
+
+    &:hover {
+        background: #612316;
+        color: #fff;
+        border: 0;
+    }
+  }
+}

@@ -1,21 +1,26 @@
 /* line 1, ../sass/adjustments/_adjustment.scss */
+html {
+  font-size: 16px;
+}
+
+/* line 5, ../sass/adjustments/_adjustment.scss */
 body {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   background: #edeff1;
 }
 
-/* line 7, ../sass/adjustments/_adjustment.scss */
+/* line 11, ../sass/adjustments/_adjustment.scss */
 .container {
   max-width: 1170px;
 }
 
-/* line 11, ../sass/adjustments/_adjustment.scss */
+/* line 15, ../sass/adjustments/_adjustment.scss */
 li {
   list-style: none;
 }
 
-/* line 15, ../sass/adjustments/_adjustment.scss */
+/* line 19, ../sass/adjustments/_adjustment.scss */
 a {
   text-decoration: none;
 }
@@ -27,8 +32,16 @@ a {
   background-size: cover;
   position: relative;
 }
+@media screen and (max-width: 576px) {
+  /* line 1, ../sass/sections/_welcome.scss */
+  .welcome-section {
+    height: auto;
+    background: linear-gradient(to bottom, transparent, #000 100%), url("../images/welcome.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+}
 
-/* line 7, ../sass/sections/_welcome.scss */
+/* line 13, ../sass/sections/_welcome.scss */
 .welcome-slogan {
   -webkit-transform: translateY(3%);
   transform: translateY(3%);
@@ -41,26 +54,26 @@ a {
   align-items: center;
   flex-direction: column;
 }
-/* line 17, ../sass/sections/_welcome.scss */
+/* line 23, ../sass/sections/_welcome.scss */
 .welcome-slogan h2:first-child {
   font: 72px/48px Arial;
   color: #fff;
 }
-/* line 22, ../sass/sections/_welcome.scss */
+/* line 28, ../sass/sections/_welcome.scss */
 .welcome-slogan p {
   font: 30px/48px Arial;
   color: #fff;
 }
 
-/* line 28, ../sass/sections/_welcome.scss */
+/* line 34, ../sass/sections/_welcome.scss */
 .row {
   margin-bottom: 30px;
 }
-/* line 31, ../sass/sections/_welcome.scss */
+/* line 37, ../sass/sections/_welcome.scss */
 .row .presentation {
   text-align: center;
 }
-/* line 34, ../sass/sections/_welcome.scss */
+/* line 40, ../sass/sections/_welcome.scss */
 .row .presentation img {
   width: 133px;
   height: 133px;
@@ -69,24 +82,24 @@ a {
   overflow: hidden;
 }
 
-/* line 44, ../sass/sections/_welcome.scss */
+/* line 50, ../sass/sections/_welcome.scss */
 .presentation-description {
   padding: 20px 20px 0;
 }
-/* line 47, ../sass/sections/_welcome.scss */
+/* line 53, ../sass/sections/_welcome.scss */
 .presentation-description h3 {
   color: #fff;
   font: 30px/24px Arial;
   margin-bottom: 25px;
 }
-/* line 53, ../sass/sections/_welcome.scss */
+/* line 59, ../sass/sections/_welcome.scss */
 .presentation-description p {
   color: #fff;
   font: 15px/30px Arial;
   margin-bottom: 0;
 }
 
-/* line 60, ../sass/sections/_welcome.scss */
+/* line 66, ../sass/sections/_welcome.scss */
 .btn {
   padding: 15px 55px;
   background: #fff;
@@ -94,7 +107,7 @@ a {
   color: #612316;
   border-radius: 30px;
 }
-/* line 67, ../sass/sections/_welcome.scss */
+/* line 73, ../sass/sections/_welcome.scss */
 .btn:hover {
   background: #612316;
   color: #fff;
@@ -199,4 +212,88 @@ a {
 /* line 40, ../sass/sections/_our-news.scss */
 .our-news .our-news-body .padding {
   padding: 15px 50px;
+}
+
+/* line 1, ../sass/sections/_newsletter.scss */
+.newsletter-section {
+  padding: 5.625rem 0 6.875rem;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.59) 1%, transparent 100%), url("../images/burgers-bg.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 576px) {
+  /* line 1, ../sass/sections/_newsletter.scss */
+  .newsletter-section {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.59) 1%, transparent 100%), url("../images/burgers-bg.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+}
+
+/* line 16, ../sass/sections/_newsletter.scss */
+.newsletter-center {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 21, ../sass/sections/_newsletter.scss */
+.newsletter-center header {
+  font: 30px/48px Arial;
+  color: #fff;
+}
+/* line 26, ../sass/sections/_newsletter.scss */
+.newsletter-center p {
+  font: 15px/24px Arial;
+  color: #fff;
+  margin-bottom: 2.5rem;
+  width: 34.0625rem;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  /* line 26, ../sass/sections/_newsletter.scss */
+  .newsletter-center p {
+    width: 23.125rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  /* line 16, ../sass/sections/_newsletter.scss */
+  .newsletter-center {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+
+/* line 44, ../sass/sections/_newsletter.scss */
+.newsletter-form input, .newsletter-form button {
+  border-radius: 3.125rem;
+  border: 0.0625rem solid #c9cbcc;
+}
+/* line 49, ../sass/sections/_newsletter.scss */
+.newsletter-form input {
+  padding: 0.9375rem 2.5rem;
+  width: 20.3125rem;
+  background: transparent;
+  color: #fff;
+}
+/* line 56, ../sass/sections/_newsletter.scss */
+.newsletter-form button {
+  padding: 0.9375rem 4.375rem;
+  margin-left: -3.125rem;
+  background: #fff;
+  color: #612316;
+}
+/* line 62, ../sass/sections/_newsletter.scss */
+.newsletter-form button:hover {
+  background: #612316;
+  color: #fff;
+  border: 0;
 }

@@ -3,6 +3,12 @@
   background: linear-gradient(to bottom, transparent,  #000 100%), url("../images/welcome.jpg") 0 0 no-repeat;
   background-size: cover;
   position: relative;
+
+  @include phones {
+    height: auto;
+    background: linear-gradient(to bottom, transparent,  #000 100%), url("../images/welcome.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
 }
 .welcome-slogan {
   -webkit-transform: translateY(3%);
